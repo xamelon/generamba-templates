@@ -11,6 +11,7 @@ code_files:
 
 # View layer
 - {name: View/ViewController.swift, path: Code/View/ViewController.swift.liquid}
+- {name: View/ViewController.xib, path: Code/View/ViewController.swift.liquid}
 
 # ViewModel layer
 - {name: ViewModel/ViewModel.swift, path: Code/ViewModel/ViewModel.swift.liquid}
