@@ -26,7 +26,7 @@ final class {{ module_info.name }}Coordinator {
 
     // MARK: - Private implementation
     private func show{{ module_info.name }}Screen() {
-    	if let {{ module_info.name }}VC = {{ module_info.name }}VC(nibName: "{{ module_info.name }}VC", bundle: nil) }
+    	if let {{ module_info.name }}VC = {{ module_info.name }}ViewController(nibName: "{{ module_info.name }}ViewController", bundle: nil) {
 	    // setup bindings
             {{ module_info.name }}VC.viewModel = {{ module_info.name }}ViewModel()
 
