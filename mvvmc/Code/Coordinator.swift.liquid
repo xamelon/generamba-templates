@@ -26,11 +26,11 @@ final class {{ module_info.name }}Coordinator {
 
     // MARK: - Private implementation
     private func show{{ module_info.name }}Screen() {
-    	if let {{ module_info.name }}VC = {{ module_info.name }}ViewController(nibName: "{{ module_info.name }}ViewController", bundle: nil) {
-	    // setup bindings
-            {{ module_info.name }}VC.viewModel = {{ module_info.name }}ViewModel()
+    	let {{ module_info.name }}VC = {{ module_info.name }}ViewController(nibName: "{{ module_info.name }}ViewController", bundle: nil) 
+	// setup bindings
+        {{ module_info.name }}VC.viewModel = {{ module_info.name }}ViewModel()
 
-            navigationController?.pushViewController({{ module_info.name }}VC, animated: false)
-        }
+        navigationController?.pushViewController({{ module_info.name }}VC, animated: false)
+        
     }
 }
